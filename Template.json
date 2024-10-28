@@ -11,7 +11,7 @@
 	    "defaultValue": "westeurope"
         },
         "numberOfUnits": {
-            "type": "String",
+            "type": "Int",
 	    "defaultValue": "1"
         },
         "crossGeoCompute": {
