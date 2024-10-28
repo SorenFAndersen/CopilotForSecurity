@@ -3,19 +3,24 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "capacityName": {
-            "type": "String"
+            "type": "String",
+	    "defaultValue": "scu-capacity"
         },
         "location": {
-            "type": "String"
+            "type": "String",
+	    "defaultValue": "westeurope"
         },
         "numberOfUnits": {
-            "type": "Int"
+            "type": "Int",
+	    "defaultValue": "1"
         },
         "crossGeoCompute": {
-            "type": "String"
+            "type": "String",
+	    "defaultValue": "Allowed"
         },
         "geo": {
-            "type": "String"
+            "type": "String",
+	    "defaultValue": "eu"
         }
     },
     "resources": [
