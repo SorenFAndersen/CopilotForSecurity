@@ -12,7 +12,7 @@
         },
         "numberOfUnits": {
             "type": "Int",
-	    "defaultValue": "1"
+	    "defaultValue": 1
         },
         "crossGeoCompute": {
             "type": "String",
