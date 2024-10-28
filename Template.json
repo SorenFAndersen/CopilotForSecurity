@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "capacityName": {
+            "type": "String",
+	    "defaultValue": "scu-capacity"
+        },
+        "location": {
+            "type": "String",
+	    "defaultValue": "westeurope"
+        },
+        "numberOfUnits": {
+            "type": "Int",
+	    "defaultValue": 1
+        },
+        "crossGeoCompute": {
+            "type": "String",
+	    "defaultValue": "Allowed"
+        },
+        "geo": {
+            "type": "String",
+	    "defaultValue": "eu"
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.SecurityCopilot/capacities",
+            "apiVersion": "2023-12-01-preview",
+            "name": "[parameters('capacityName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "numberOfUnits": "[parameters('numberOfUnits')]",
+                "crossGeoCompute": "[parameters('crossGeoCompute')]",
+                "geo": "[parameters('geo')]"
+            }
+        }
+    ]
+}
